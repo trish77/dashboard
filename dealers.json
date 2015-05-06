@@ -1,0 +1,75 @@
+[
+
+	{
+	  "id": 1
+	  "name": "A & L Motors"
+	},
+	{
+	  "id": 2
+	  "name": "A & L Motors BMW"
+	},
+	{ "id": 3
+	  "name": "A & L Motors Jaguar"
+	},
+	{ "id": 4
+	  "name": "A & T Chevrolet"
+	},
+	{"id": 5
+	  "name": "A & T Subaru"
+	},
+	{ "id": 6
+	  "name": "A C Collins Ford"
+	},
+	{"id": 7
+	  "name": "A Crivelli Buick GMC"
+	},
+
+	{ "id": 8
+	  "name": "Acura & Volvo of Athens" },
+	{ "id": 9
+	  "name": "Acura 101 West" },
+	{ "id": 10
+	  "name": "Acura At Oxmoor" },
+	{ "id": 11
+	  "name": "Acura Bay Shore" },
+	{ "id": 12
+	  "name": "Acura By Executive" },
+	{ "id": 13
+	  "name": "Acura Carland" },
+
+	{ "id": 14
+	  "name": "Bay Mitsubishi" },
+	{"id": 15
+	  "name": "Bay Ridge Ford" },
+	{"id": 16
+	  "name": "Bay Ridge Honda" },
+	{ "id": 17
+	  "name": "Bay Ridge Lexus" },
+	{ "id": 18
+	  "name": "Bay Ridge Nissan" },
+	{ "id": 19
+	  "name": "Bay Ridge Subaru" },
+
+	{"id": 20
+	  "name": "Baydo Chevrolet" },
+
+	{"id": 21
+	  "name": "BMW Of Annapolis" },
+	{ "id": 22
+	  "name": "BMW Of Asheville" },
+	{"id": 24
+	  "name": "BMW Of Atlantic City" },
+	{ "id": 25
+	  "name": "BMW Of Austin" },
+
+	{ "id": 26
+	  "name": "Cadillac Of Fayetteville" },
+	{ "id": 27
+	  "name": "Cadillac Of Greenwich" },
+	{ "id": 28
+	  "name": "Cadillac Of Knoxville" },
+	{ "id": 29
+	  "name": "Cadillac Of La Quinta" },
+	{ "id": 30
+	  "name": "Cadillac of Lake Lanier" }
+  ]

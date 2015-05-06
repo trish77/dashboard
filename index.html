@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+    <title>Social Dealer | Dashboard</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/clean.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <!--    <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg"/>
+                        </span>-->
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                            <strong class="font-bold">Leon Hughes</strong>
+                                </span>
+                                <span class="text-muted text-xs block">Admin Account <b
+                                        class="caret"></b>
+                                </span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="#">My Preferences</a></li>
+                            <li><a href="#">Change Password</a></li>
+                            <li><a href="#">Message Support</a></li>
+                            <li><a href="#">Product Config</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-dashboard"></i> <span class="nav-label">Dashboard</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="index.html">Overview</a></li>
+                        <li><a href="#">Social</a></li>
+                        <li><a href="#">Locations</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i>
+                        <span class="nav-label">Reputation</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">Review Stream</a></li>
+                        <li><a href="#">Review Sites</a></li>
+                        <li><a href="#">Competitive Analysis</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-share-alt"></i>
+                        <span class="nav-label">Social</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">Publish</a></li>
+                        <li><a href="#">Post Activity</a></li>
+                        <li><a href="#">Content Library</a></li>
+                        <li><a href="#">Post Calendar</a></li>
+                        <li><a href="#">Profile Manager</a></li>
+                        <li><a href="#">Post Statistics</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-line-chart"></i>
+                        <span class="nav-label">Reports</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">Social Snapshot</a></li>
+                        <li><a href="#">Reputation Snapshot</a></li>
+                        <li><a href="#">Enterprise Reputation</a></li>
+                        <li><a href="#">Reputation Summary</a></li>
+                        <li><a href="#">Post Summary</a></li>
+                        <li><a href="#">Social Report Card</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-files-o"></i>
+                        <span class="nav-label">Admin</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">Accounts</a></li>
+
+                    </ul>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i>
+                    </a>
+                    <a class="navbar-brand mob" href="index.html">
+                        <img src="img/socialdealer.png" class="logo" alt=""></a>
+                    <!-- <form role="search" class="navbar-form-custom" action="search_results.html">
+                         <div class="form-group">
+                             <input type="text" placeholder="Search for something..." class="form-control"
+                                    name="top-search" id="top-search">
+                         </div>
+                     </form>-->
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+
+                    <li class="dropdown">
+                        <a class="count-info" href="#">
+                            <!--<span class="btn glyphicon glyphicon-edit" type="button"></span>-->
+                            <i class="fa fa-1 fa-edit tooltip-demo" data-toggle="tooltip" data-delay="100"
+                               data-placement="left" title="Publish"></i>Publish
+                        </a>
+
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-1 fa-exclamation-circle tooltip-demo" data-toggle="tooltip"
+                               data-placement="bottom" title="Notifications"></i>
+                            <span>Notifications</span>
+                            <span class="label label-primary">6</span>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="#" class="messages">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> You have 8 messages
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#" class="messages">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <span class="pull-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#" class="messages">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="#" class="messages">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <!--  <li>
+                          <a href="login.html">
+                              <i class="fa fa-sign-out"></i> Log out
+                          </a>
+                      </li>-->
+                    <li class="dropdown">
+                        <a class="right-sidebar-toggle">
+                            <i class="fa fa-1 fa-users"></i>
+                            Castle Chevrolet
+                            <i class="fa fa-1 fa-gears tooltip-demo" data-toggle="tooltip" data-placement="bottom"
+                               title="Group Search" style="padding-left: 4px"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="row wrapper white-bg page-heading">
+            <div class="col-lg-12">
+                <h1 class="text-left">Dashboard</h1>
+
+                <img src="img/dashboard-inner.png" class="img-responsive"/>
+
+
+            </div>
+
+        </div>
+
+        <div id="right-sidebar">
+            <div class="sidebar-container">
+
+                <ul class="nav nav-tabs navs-3">
+
+                    <li class="active"><a data-toggle="tab" href="#tab-1">
+                        All
+                        <br/>Accounts
+                    </a></li>
+
+                    <li class=""><a data-toggle="tab" href="#tab-3">
+                        Recent Accounts
+                    </a></li>
+                </ul>
+
+                <div class="tab-content">
+
+
+                    <div id="tab-1" class="tab-pane active">
+
+                        <div class="sidebar-title">
+                            <h3><span class="glyphicon glyphicon-list-alt"></span>
+                                See All Accounts
+                            </h3>
+
+                        </div>
+                        <div id="columns">
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div id="tab-3" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3><i class="fa fa-list"></i> Recent Accounts</h3>
+
+                        </div>
+                        <ul class="sidebar-list">
+                            <li>Social Dealer</li>
+                            <li>Castle Chevrolet</li>
+                            <li>Hendrick Auto Dealer</li>
+                            <li>Lexis of North Miami</li>
+                            <li>Castle Motor Group</li>
+                            <li>Lexis of Austin</li>
+                            <li>Alan Brown Chevrolet</li>
+                            <li>Alex Schreiber Chevrolet</li>
+                            <li>Coral Gables Lexus</li>
+                            <li>Kia of Cape Cod</li>
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Mainly scripts -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+<!-- Custom and plugin javascript -->
+<script src="js/custom.js"></script>
+<script src="js/jquery.columns.js"></script>
+<script src="js/mustache.min.js"></script>
+
+
+<!--<script src="js/lazyjson.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>-->
+
+<!-- jQuery UI -->
+<!--<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>-->
+
+<script>
+    $.ajax({
+        url: 'data.json',
+        dataType: 'json',
+        success: function (json) {
+            $('#columns').columns({
+                data: json,
+                showRows: [15, 25, 50],
+                size: 15,
+                schema: [
+                    {"header": "Name", "key": "name"}
+
+                ]
+            });
+        }
+    });
+
+
+</script>
+
+
+</body>
+</html>

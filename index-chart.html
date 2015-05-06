@@ -1,0 +1,636 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+    <title>Social Dealer | Dashboard</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/clean.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <!--    <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg"/>
+                        </span>-->
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                            <strong class="font-bold">Leon Hughes</strong>
+                                </span>
+                                <span class="text-muted text-xs block">Admin Account <b
+                                        class="caret"></b>
+                                </span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="#">My Preferences</a></li>
+                            <li><a href="#">Change Password</a></li>
+                            <li><a href="#">Message Support</a></li>
+                            <li><a href="#">Product Config</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-dashboard"></i> <span class="nav-label">Dashboard</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="index.html">Overview</a></li>
+                        <li><a href="#">Social</a></li>
+                        <li><a href="#">Locations</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i>
+                        <span class="nav-label">Reputation</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">Review Stream</a></li>
+                        <li><a href="#">Review Sites</a></li>
+                        <li><a href="#">Competitive Analysis</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-share-alt"></i>
+                        <span class="nav-label">Social</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">Publish</a></li>
+                        <li><a href="#">Post Activity</a></li>
+                        <li><a href="#">Content Library</a></li>
+                        <li><a href="#">Post Calendar</a></li>
+                        <li><a href="#">Profile Manager</a></li>
+                        <li><a href="#">Post Statistics</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-line-chart"></i>
+                        <span class="nav-label">Reports</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">Social Snapshot</a></li>
+                        <li><a href="#">Reputation Snapshot</a></li>
+                        <li><a href="#">Enterprise Reputation</a></li>
+                        <li><a href="#">Reputation Summary</a></li>
+                        <li><a href="#">Post Summary</a></li>
+                        <li><a href="#">Social Report Card</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-files-o"></i>
+                        <span class="nav-label">Admin</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="#">Accounts</a></li>
+
+                    </ul>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i>
+                    </a>
+                    <a class="navbar-brand mob" href="index.html">
+                        <img src="img/socialdealer.png" class="logo" alt=""></a>
+                    <!-- <form role="search" class="navbar-form-custom" action="search_results.html">
+                         <div class="form-group">
+                             <input type="text" placeholder="Search for something..." class="form-control"
+                                    name="top-search" id="top-search">
+                         </div>
+                     </form>-->
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+
+                    <li class="dropdown">
+                        <a class="count-info" href="#">
+                            <!--<span class="btn glyphicon glyphicon-edit" type="button"></span>-->
+                            <i class="fa fa-1 fa-edit tooltip-demo" data-toggle="tooltip" data-delay="100"
+                               data-placement="left" title="Publish"></i>Publish
+                        </a>
+
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-1 fa-exclamation-circle tooltip-demo" data-toggle="tooltip"
+                               data-placement="bottom" title="Messages"></i>
+                            <span>Messages</span>
+                            <span class="label label-primary">6</span>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="#" class="messages">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> You have 8 messages
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#" class="messages">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <span class="pull-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#" class="messages">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="#" class="messages">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <!--  <li>
+                          <a href="login.html">
+                              <i class="fa fa-sign-out"></i> Log out
+                          </a>
+                      </li>-->
+                    <li class="dropdown">
+                        <a class="right-sidebar-toggle">
+                            <i class="fa fa-1 fa-users"></i>
+                            Castle Chevrolet
+                            <i class="fa fa-1 fa-gears tooltip-demo" data-toggle="tooltip" data-placement="bottom"
+                               title="Group Search" style="padding-left: 4px"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="row wrapper white-bg page-heading">
+            <div class="col-lg-12">
+                <h1 class="text-left">Dashboard</h1>
+
+            </div>
+
+            </div>
+
+        </div>
+
+        <div id="right-sidebar">
+            <div class="sidebar-container">
+
+                <ul class="nav nav-tabs navs-3">
+
+                    <li class="active"><a data-toggle="tab" href="#tab-1">
+                        All
+                        <br/>Accounts
+                    </a></li>
+
+                    <li class=""><a data-toggle="tab" href="#tab-3">
+                        Recent Accounts
+                    </a></li>
+                </ul>
+
+                <div class="tab-content">
+
+
+                    <div id="tab-1" class="tab-pane active">
+
+                        <div class="sidebar-title">
+                            <h3><span class="glyphicon glyphicon-list-alt"></span>
+                                See All Accounts
+                            </h3>
+
+                        </div>
+                        <div id="columns">
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div id="tab-3" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3><i class="fa fa-list"></i> Recent Accounts</h3>
+
+                        </div>
+                        <ul class="sidebar-list">
+                            <li>Social Dealer</li>
+                            <li>Castle Chevrolet</li>
+                            <li>Hendrick Auto Dealer</li>
+                            <li>Lexis of North Miami</li>
+                            <li>Castle Motor Group</li>
+                            <li>Lexis of Austin</li>
+                            <li>Alan Brown Chevrolet</li>
+                            <li>Alex Schreiber Chevrolet</li>
+                            <li>Coral Gables Lexus</li>
+                            <li>Kia of Cape Cod</li>
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/highcharts.src.js"></script>
+<script src="http://code.highcharts.com/modules/data.js"></script>
+
+
+<!-- Custom and plugin javascript -->
+<script src="js/custom.js"></script>
+<script src="js/jquery.columns.js"></script>
+<script src="js/mustache.min.js"></script>
+
+
+<!--<script src="js/lazyjson.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>-->
+
+<!-- jQuery UI -->
+<!--<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>-->
+
+<script>
+    $.ajax({
+        url: 'data.json',
+        dataType: 'json',
+        success: function (json) {
+            $('#columns').columns({
+                data: json,
+                showRows: [15, 25, 50],
+                size: 15,
+                schema: [
+                    {"header": "Name", "key": "name"}
+
+                ]
+            });
+        }
+    });
+
+
+    $(function () {
+        $('#example1').highcharts({
+            chart: {
+                type: 'spline'
+            },
+            title: {
+                text: 'Monthly Average Temperature'
+            },
+            subtitle: {
+                text: 'Source: WorldClimate.com'
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                    text: 'Temperature'
+                },
+                labels: {
+                    formatter: function () {
+                        return this.value + '°';
+                    }
+                }
+            },
+            tooltip: {
+                crosshairs: true,
+                shared: true
+            },
+            plotOptions: {
+                spline: {
+                    marker: {
+                        radius: 4,
+                        lineColor: '#666666',
+                        lineWidth: 1
+                    }
+                }
+            },
+            series: [{
+                name: 'Tokyo',
+                marker: {
+                    symbol: 'square'
+                },
+                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, {
+                    y: 26.5,
+                    marker: {
+                        symbol: 'url(http://www.highcharts.com/demo/gfx/sun.png)'
+                    }
+                }, 23.3, 18.3, 13.9, 9.6]
+
+            }, {
+                name: 'London',
+                marker: {
+                    symbol: 'diamond'
+                },
+                data: [{
+                    y: 3.9,
+                    marker: {
+                        symbol: 'url(http://www.highcharts.com/demo/gfx/snow.png)'
+                    }
+                }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+            }]
+        });
+    });
+
+    $(function () {
+        $('#example2').highcharts({
+            chart: {
+                type: 'spline'
+            },
+            title: {
+                text: 'Wind speed during two days'
+            },
+            subtitle: {
+                text: 'October 6th and 7th 2009 at two locations in Vik i Sogn, Norway'
+            },
+            xAxis: {
+                type: 'datetime',
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Wind speed (m/s)'
+                },
+                min: 0,
+                minorGridLineWidth: 0,
+                gridLineWidth: 0,
+                alternateGridColor: null,
+                plotBands: [{ // Light air
+                    from: 0.3,
+                    to: 1.5,
+                    color: 'rgba(68, 170, 213, 0.1)',
+                    label: {
+                        text: 'Light air',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // Light breeze
+                    from: 1.5,
+                    to: 3.3,
+                    color: 'rgba(0, 0, 0, 0)',
+                    label: {
+                        text: 'Light breeze',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // Gentle breeze
+                    from: 3.3,
+                    to: 5.5,
+                    color: 'rgba(68, 170, 213, 0.1)',
+                    label: {
+                        text: 'Gentle breeze',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // Moderate breeze
+                    from: 5.5,
+                    to: 8,
+                    color: 'rgba(0, 0, 0, 0)',
+                    label: {
+                        text: 'Moderate breeze',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // Fresh breeze
+                    from: 8,
+                    to: 11,
+                    color: 'rgba(68, 170, 213, 0.1)',
+                    label: {
+                        text: 'Fresh breeze',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // Strong breeze
+                    from: 11,
+                    to: 14,
+                    color: 'rgba(0, 0, 0, 0)',
+                    label: {
+                        text: 'Strong breeze',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }, { // High wind
+                    from: 14,
+                    to: 15,
+                    color: 'rgba(68, 170, 213, 0.1)',
+                    label: {
+                        text: 'High wind',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }]
+            },
+            tooltip: {
+                valueSuffix: ' m/s'
+            },
+            plotOptions: {
+                spline: {
+                    lineWidth: 4,
+                    states: {
+                        hover: {
+                            lineWidth: 5
+                        }
+                    },
+                    marker: {
+                        enabled: false
+                    },
+                    pointInterval: 3600000, // one hour
+                    pointStart: Date.UTC(2009, 9, 6, 0, 0, 0)
+                }
+            },
+            series: [{
+                name: 'Hestavollane',
+                data: [4.3, 5.1, 4.3, 5.2, 5.4, 4.7, 3.5, 4.1, 5.6, 7.4, 6.9, 7.1,
+                    7.9, 7.9, 7.5, 6.7, 7.7, 7.7, 7.4, 7.0, 7.1, 5.8, 5.9, 7.4,
+                    8.2, 8.5, 9.4, 8.1, 10.9, 10.4, 10.9, 12.4, 12.1, 9.5, 7.5,
+                    7.1, 7.5, 8.1, 6.8, 3.4, 2.1, 1.9, 2.8, 2.9, 1.3, 4.4, 4.2,
+                    3.0, 3.0]
+
+            }, {
+                name: 'Voll',
+                data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.3, 0.0,
+                    0.0, 0.4, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                    0.0, 0.6, 1.2, 1.7, 0.7, 2.9, 4.1, 2.6, 3.7, 3.9, 1.7, 2.3,
+                    3.0, 3.3, 4.8, 5.0, 4.8, 5.0, 3.2, 2.0, 0.9, 0.4, 0.3, 0.5, 0.4]
+            }],
+            navigation: {
+                menuItemStyle: {
+                    fontSize: '10px'
+                }
+            }
+        });
+    });
+
+
+    $(function () {
+        $('#example3').highcharts({
+            data: {
+                table: 'datatable'
+            },
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Social Dealer Comparison Dealer Likes'
+            },
+            xAxis: {
+                categories: ['Total', 'Negative Reviews', 'Positive Reviews', 'Average Ratings']
+            },
+            yAxis: {
+                allowDecimals: false,
+                title: {
+                    text: 'Units'
+                }
+            },
+            tooltip: {
+                formatter: function () {
+                    return '<b>' + this.series.name + '</b><br/>' +
+                            this.point.y + ' ' + this.point.name.toLowerCase();
+                }
+            }
+        });
+    });
+
+
+    $(function () {
+
+        // Make monochrome colors and set them as default for all pies
+        Highcharts.getOptions().plotOptions.pie.colors = (function () {
+            var colors = [],
+                    base = Highcharts.getOptions().colors[0],
+                    i;
+
+            for (i = 0; i < 10; i += 1) {
+                // Start out with a darkened base color (negative brighten), and end
+                // up with a much brighter color
+                colors.push(Highcharts.Color(base).brighten((i - 3) / 7).get());
+            }
+            return colors;
+        }());
+
+        // Build the chart
+        $('#example4').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: 'Browser market shares at a specific website, 2014'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Browser share',
+                data: [
+                    ['Firefox',   45.0],
+                    ['IE',       26.8],
+                    {
+                        name: 'Chrome',
+                        y: 12.8,
+                        sliced: true,
+                        selected: true
+                    },
+                    ['Safari',    8.5],
+                    ['Opera',     6.2],
+                    ['Others',   0.7]
+                ]
+            }]
+        });
+    });
+</script>
+
+
+<!-- Toastr -->
+<!--<script src="js/toastr.js"></script>-->
+
+
+</body>
+</html>
